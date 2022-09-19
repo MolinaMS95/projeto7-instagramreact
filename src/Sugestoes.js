@@ -3,7 +3,7 @@ function Sugestao(props) {
     return (
         <div class="sugestao">
                 <div class="usuario">
-                    <img src={path} />
+                    <img src={path} alt={props.name}/>
                     <div class="texto">
                         <div class="nome">{props.name}</div>
                         <div class="razao">{props.status}</div>

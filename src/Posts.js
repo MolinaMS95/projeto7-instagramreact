@@ -28,7 +28,7 @@ function Post(props) {
         <div class="post">
             <div class="topo">
                 <div class="usuario">
-                    <img src={path}/>
+                    <img src={path} alt={props.name}/>
                     {props.name}
                 </div>
                 <div class="acoes">
@@ -37,7 +37,7 @@ function Post(props) {
             </div>
 
             <div class="conteudo">
-                <img src={props.img} onClick={likePostfromImg}/>
+                <img src={props.img} onClick={likePostfromImg} alt={props.img}/>
             </div>
 
             <div class="fundo">
@@ -53,7 +53,7 @@ function Post(props) {
                 </div>
 
                 <div class="curtidas">
-                    <img src={likeImg} />
+                    <img src={likeImg} alt={props.like}/>
                     <div class="texto">
                         Curtido por <strong>{props.like}</strong> e <strong>outras {likes.toLocaleString('pt-BR')} pessoas</strong>
                     </div>

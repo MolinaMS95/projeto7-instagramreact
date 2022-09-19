@@ -37,7 +37,7 @@ function User(props){
 
     return(
         <div class="usuario">
-            <img src={img} onClick ={changePicture} />
+            <img src={img} onClick ={changePicture} alt={props.image}/>
             <div class="texto">
                 <strong>{username}</strong>
                 <span>
